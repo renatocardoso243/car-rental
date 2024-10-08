@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Car1 from "../../assets/images/mercedes.png";
 import Car2 from "../../assets/images/audi.png";
 import Car3 from "../../assets/images/bmw.png";
-import Car4 from "../../assets/images/porsche.png";
+import Car4 from "../../assets/images/Porsche.png";
 
 import GooglePlay from "../../assets/images/logos/googleplay.png";
 import AppleStore from "../../assets/images/logos/applestore.png";

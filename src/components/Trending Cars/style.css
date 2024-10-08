@@ -1,0 +1,321 @@
+.trending-cars {
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.trending-cars .trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-cars .trending-header button {
+  border: none;
+  background-color: orange;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.trending-cars .trending-header button:hover {
+  scale: 1.1;
+}
+
+.trending-cars h2 {
+  font-size: 30px;
+  color: black;
+  padding: 20px 0;
+}
+
+.trending-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.trending-card {
+  position: relative;
+  height: 500px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.trending-card .img-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  height: 200px;
+  padding: 10px;
+}
+
+.trending-card img {
+  object-fit: contain;
+}
+
+.trending-name {
+  padding: 20px;
+  position: relative;
+  top: 50px;
+}
+.trending-name #car-name {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+}
+
+.price .perday {
+  font-size: 20px;
+  font-weight: 600;
+  color: orange;
+}
+
+.price .permonth {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(168, 168, 168);
+}
+
+.trending-name .info {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+/* .trending-name .info span {
+  color: rgb(168, 168, 168);
+  font-size: 18px;
+} */
+
+.info span {
+  font-size: 18px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.trending-card .actions {
+  position: relative;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.trending-card .actions a button {
+  font-size: 20px;
+  width: 280px;
+  border: none;
+  border-radius: 10px;
+  background-color: orange;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.trending-card .actions button:hover {
+  scale: 1.1;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .trending-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+
+  .trending-name .info span {
+    color: rgb(168, 168, 168);
+  }
+}
+
+@media (min-width: 1024px) {
+  .trending-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  }
+
+  .trending-card {
+    height: 390px;
+  }
+
+  .trending-name {
+    padding: 10px;
+    top: 5px;
+  }
+
+  .trending-name #car-name {
+    font-size: 15px;
+  }
+
+  .trending-name .price .perday {
+    font-size: 14px;
+  }
+
+  .trending-name .price .permonth {
+    font-size: 14px;
+  }
+
+  .trending-name .info {
+    gap: 5px;
+  }
+
+  .trending-name .info span {
+    font-size: 12px;
+    color: rgb(168, 168, 168);
+  }
+
+  .trending-card .actions {
+    top: 20px;
+  }
+
+  .trending-card .actions a button {
+    width: 200px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .trending-cars {
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .trending-cars .trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .trending-cars .trending-header button {
+    border: none;
+    background-color: orange;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .trending-cars .trending-header button:hover {
+    scale: 1.1;
+  }
+
+  .trending-cars h2 {
+    font-size: 30px;
+    color: black;
+    padding: 20px 0;
+  }
+
+  .trending-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .trending-card {
+    position: relative;
+    height: 500px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .trending-card .img-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .trending-card img {
+    object-fit: contain;
+  }
+
+  .trending-name {
+    padding: 20px;
+    position: relative;
+    top: 50px;
+  }
+  .trending-name #car-name {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .price {
+    display: flex;
+    gap: 10px;
+  }
+
+  .trending-name .price .perday {
+    font-size: 20px;
+    font-weight: 600;
+    color: orange;
+  }
+
+  .trending-name .price .permonth {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(168, 168, 168);
+  }
+
+  .trending-name .info {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+  }
+
+  .trending-name .info span {
+    color: rgb(168, 168, 168);
+    font-size: 16px;
+  }
+
+  .info span {
+    font-size: 18px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .trending-card .actions {
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .trending-card .actions a button {
+    font-size: 20px;
+    width: 280px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .trending-card .actions button:hover {
+    scale: 1.1;
+  }
+}

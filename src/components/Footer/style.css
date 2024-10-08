@@ -1,0 +1,152 @@
+/* Footer container */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid Layout */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 200px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Branding Section */
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+}
+.footer-branding h2 {
+  color: orange;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.footer-branding p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.footer-socials svg {
+  cursor: pointer;
+}
+
+/* Quick Links Section */
+.footer-links h3 {
+  color: orange;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-links ul li:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+}
+.footer-contact h3 {
+  color: orange;
+}
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin: 0 150px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom ul li {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.footer-bottom ul li:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+}

@@ -1,0 +1,57 @@
+/* src/index.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  /* #f0f0f0 */
+  background-color: #f0f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-navbar {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}

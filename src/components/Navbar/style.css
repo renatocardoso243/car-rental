@@ -1,0 +1,171 @@
+.container-navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: orange;
+  /* position: absolute; */
+  /* height: 100px; */
+  width: 100%;
+  padding: 10px 30px;
+  /* padding: 1px; */
+  /* z-index: 1; */
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Arial;
+  font-style: italic;
+  text-decoration: underline;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.navbar .user-tools {
+  color: black;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.navbar .user-tools .user-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .user-tools span {
+  font-size: 20px;
+}
+
+/* Mobile menu */
+/* Style the navigation menu */
+.topnav {
+  display: none;
+  background-color: orange;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.topnav .menu-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav .menu-mobile h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Arial;
+  font-style: italic;
+  text-decoration: underline;
+  color: black;
+}
+
+/* Estilo para o overlay */
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.986);
+  overflow-y: hidden;
+  transition: 0.5s ease;
+  z-index: 999;
+}
+
+.overlay.open {
+  height: 100%;
+}
+
+/* Conteúdo do overlay */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.overlay-content a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Ícone de hambúrguer */
+.menu-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Ícone de fechar o overlay */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 1024px) {
+  .overlay-content a {
+    font-size: 18px;
+  }
+
+  .menu-icon {
+    font-size: 25px;
+  }
+
+  .container-navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .second-navbar {
+    display: none;
+  }
+
+  .mobile-second-navbar {
+    display: flex;
+  }
+
+  .topnav {
+    display: block;
+    width: 100%;
+  }
+}

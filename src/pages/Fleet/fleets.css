@@ -1,0 +1,262 @@
+.fleets-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.filters {
+  width: 20%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  height: 700px;
+}
+
+.filters h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.filter-section h3 {
+  margin-bottom: 10px;
+}
+
+.filter-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o botão Apply Filters */
+.apply-filters-btn {
+  background-color: orange;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+.apply-filters-btn:hover {
+  scale: 1.1;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.car-list .car-card {
+  position: relative;
+  height: 450px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.car-card .img-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  height: 200px;
+  padding: 10px;
+}
+
+.car-card img {
+  object-fit: contain;
+}
+
+.car-name {
+  padding: 20px;
+  position: relative;
+  top: 50px;
+}
+.car-name #car-name {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+}
+
+.price .perday {
+  font-size: 18px;
+  font-weight: 600;
+  color: orange;
+}
+
+.price .permonth {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(168, 168, 168);
+}
+
+.car-name .info {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.car-name .info span {
+  color: rgb(168, 168, 168);
+}
+
+.info span {
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.car-card .actions {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.car-card .actions a button {
+  font-size: 20px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  background-color: orange;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.car-card .actions button:hover {
+  scale: 1.1;
+}
+.car-card .actions button:hover {
+  scale: 1.1;
+}
+
+.car-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-now:hover {
+  scale: 1.1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container .title h2 {
+    font-size: 25px;
+  }
+  .filters {
+    padding: 0;
+    height: 200px;
+  }
+
+  .filters h2 {
+    font-size: 20px;
+  }
+
+  .filters h3 {
+    font-size: 15px;
+  }
+
+  .filter-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  .filter-section label {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+  }
+
+  .fleets-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filters {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .car-list {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .car-image {
+    height: auto;
+  }
+
+  .book-now {
+    width: 75%;
+  }
+  .car-info {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .fleets-container .filters {
+    padding: 0;
+  }
+
+  .car-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .car-name {
+    padding: 10px;
+    top: 30px;
+  }
+
+  .car-name #car-name {
+    font-size: 16px;
+  }
+
+  .price .perday {
+    font-size: 15px;
+  }
+
+  .price .permonth {
+    font-size: 15px;
+  }
+
+  .car-list .car-card {
+    height: 420px;
+  }
+
+  .car-card .actions {
+    top: 40px;
+  }
+  .car-card .actions a button {
+    font-size: 20px;
+    width: 220px;
+  }
+}

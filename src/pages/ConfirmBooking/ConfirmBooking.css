@@ -1,0 +1,222 @@
+.confirm-booking-container {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.confirm-booking-container h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.car-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.car-details img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.car-details .car-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: left;
+}
+
+.car-details .car-info .detailed-info {
+  display: flex;
+  align-items: normal;
+  justify-content: top;
+  gap: 20px;
+}
+
+.detailed-info .left-panel-info .right-panel-info {
+  width: 50%;
+  height: 200px;
+  padding: 5px;
+}
+
+.confirm-booking-container .car-info h3 {
+  font-size: 1.8rem;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.confirm-booking-container .car-info p {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.booking-confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  width: 100%;
+}
+
+.booking-confirmation .form {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  width: 100%;
+}
+
+.booking-confirmation .form input {
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.booking-confirmation .form button {
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.booking-confirmation input {
+  border-bottom: 2px solid orange;
+}
+
+.booking-confirmation input:focus {
+  outline: none;
+}
+
+.booking-confirmation input::placeholder {
+  color: black;
+}
+
+.booking-confirmation button {
+  background-color: orange;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.booking-confirmation button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .confirm-booking-container .car-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .car-details .car-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .car-details .car-info img {
+    max-width: 80%;
+  }
+
+  .car-details .car-info {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  .detailed-info .left-panel-info .right-panel-info {
+    width: 100%;
+  }
+
+  .confirm-booking-container {
+    padding: 15px;
+  }
+
+  .booking-confirmation {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .booking-confirmation .form {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .car-details img {
+    max-width: 100%;
+  }
+
+  .car-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .car-info p {
+    font-size: 1rem;
+  }
+
+  .confirm-booking-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .booking-confirmation {
+    padding: 15px;
+  }
+
+  .confirm-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .car-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .car-info p {
+    font-size: 0.9rem;
+  }
+
+  .confirm-booking-container {
+    padding: 5px;
+  }
+
+  .booking-confirmation {
+    padding: 10px;
+  }
+
+  .confirm-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

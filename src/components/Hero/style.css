@@ -1,0 +1,115 @@
+.hero {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 50px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.hero-content .hero-text {
+  width: 50%;
+  padding: 100px;
+  text-align: left;
+}
+
+.hero-content .hero-text h1 {
+  font-size: 3.2rem;
+  line-height: 1;
+  color: white;
+  text-align: left;
+}
+
+.hero-content .hero-text p {
+  color: rgb(109, 109, 109);
+}
+
+/* .hero-content .hero-text button {
+  margin-top: 30px;
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+} */
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-container img {
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.brands {
+  display: flex;
+  gap: 20px;
+}
+
+.brands svg {
+  margin-top: 50px;
+  width: 60px;
+}
+
+/*Image styling*/
+.hero-image {
+  width: 50%;
+  position: relative;
+}
+
+.carousel {
+  width: 100%;
+  margin-top: 100px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  transition: left 1s ease, opacity 1s ease;
+}
+
+.carousel-image.active {
+  left: 0;
+  opacity: 1;
+}
+
+.carousel-image.next {
+  left: 100%;
+}
+
+.carousel-image.prev {
+  left: -100%;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    display: none;
+  }
+}

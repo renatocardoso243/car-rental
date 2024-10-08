@@ -1,0 +1,53 @@
+.app-promotion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px;
+  color: black;
+}
+
+.app-promotion-content {
+  padding: 20px;
+}
+
+.app-promotion h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.app-promotion p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.app-download-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.download-button {
+  width: 150px;
+  height: 50px;
+}
+
+.app-promotion-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .app-promotion-image {
+    margin-top: 20px;
+  }
+
+  .app-download-buttons {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

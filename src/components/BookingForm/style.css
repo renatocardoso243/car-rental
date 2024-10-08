@@ -1,0 +1,149 @@
+.form-container {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.booking-form {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(221, 144, 2);
+  padding: 30px 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.booking-form .form {
+  display: flex;
+  gap: 10px;
+}
+
+.booking-form .form label {
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+}
+
+.booking-form .form .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form .form .input select {
+  width: 157px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: black;
+  background: white;
+}
+
+.booking-form .form .input input {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: black;
+  background: white;
+}
+
+/* .booking-form .form input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+} */
+
+.booking-form .continue-btn button {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  color: orange;
+  background: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .form-container .booking-form {
+    flex-direction: column;
+  }
+  .form-container .booking-form .form {
+    display: block;
+  }
+
+  .form-container .booking-form .form .input select {
+    width: 100%;
+  }
+
+  .form-container .booking-form .form .input input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form-container {
+    background-color: transparent;
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+
+  .form-container .booking-form {
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .form-container .booking-form .form {
+    width: 90%;
+  }
+
+  .booking-form .form label {
+    font-size: 10px;
+  }
+
+  .booking-form .form .input input {
+    width: 125px;
+    font-size: 12px;
+  }
+  .booking-form .form .input {
+    font-size: 12px;
+  }
+
+  .booking-form .form .input select {
+    font-size: 12px;
+    width: 150px;
+  }
+
+  .booking-form .continue-btn button {
+    width: 100px;
+    font-size: 12px;
+  }
+}
